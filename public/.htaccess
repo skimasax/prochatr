@@ -1,0 +1,19 @@
+# BEGIN NinjaFirewall
+<IfModule mod_php7.c>
+   php_value auto_prepend_file /home/jscgloba/prochatr.com/ninja/firewall.php
+</IfModule>
+# END NinjaFirewall
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]
+</IfModule>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^prochatr\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.prochatr\.com$
+RewriteRule ^/?$ "https\:\/\/prochatr\.com\/" [R=301,L]

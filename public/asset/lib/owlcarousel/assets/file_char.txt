@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Alpha's Bakery World </title>
+<link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.ico">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+}
+-->
+</style>
+<link href="css/layout-home.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/style-icon.css">
+<link rel="stylesheet" href="css/reset.css">
+<style type="text/css">
+<!--
+.style8 {
+	color: #9A6A24;
+	font-size: 48px;
+}
+.style10 {
+	color: #FF0000;
+	font-size: 16;
+}
+.style13 {
+	color: #33FF00;
+	font-size: 16;
+}
+.style14 {
+	color: #FFFF00;
+	font-size: 16;
+}
+.style15 {
+	color: #FF00FF;
+	font-size: 16;
+}
+.style16 {
+	color: #00FF00;
+	font-size: 16;
+}
+.style18 {
+	color: #CC00CC;
+	font-size: 16;
+}
+.style22 {color: #FFFFFF; font-weight: bold; }
+.style24 {font-size: 16}
+.style25 {color: #00FF99}
+.style26 {color: #FF33FF}
+.style27 {font-size: 12px}
+.style29 {font-size: 14px}
+-->
+</style>
+
+        <style type="text/css">
+<!--
+.style6 {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #999999;
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+        </style>
+		
+		<link href="css/fo-layout.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+<!--
+.style30 {color: #FF0000}
+-->
+        </style>
+		
+		
+			
+		<!------------ main image S------------>
+
+
+<script language="javascript" type="text/javascript" src="javascript/jquery.js"></script>
+
+    <link rel="stylesheet" href="css/thickbox.css" type="text/css" media="screen" />
+	
+	<script language="javascript" type="text/javascript" src="javascript/thickbox.js"></script>
+
+<!------------ main image E------------>
+		
+		
+		
+		
+<style type="text/css">
+<!--
+.style33 {color: #3D2B21}
+
+.style4 {color: #CCCCCC}
+.style5 {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 24px;
+}
+-->
+</style>
+</head>
+<body onload="MM_preloadImages('images/fb1.png','images/tw1.png')">
+<div class="header">
+  <table align="center" width="1024">
+    <tr>
+	   <td width="200">&nbsp;</td>
+      <td width="100"><a href="index.html" class="style6 style29" style="font-weight: bold">Home</a></td>
+      <td width="100"><a href="aboutus.php" class="style6 style29"><strong>About Us </strong></a></td>
+      <td width="100"><a href="product.php" class="style6 style29"><strong>Products</strong></a></td>
+      <td width="100"><a href="contactus.php" class="style6 style29"><strong>Contact Us</strong></a></td>
+      <!-----<td width="100"><a href="#" class="style6 style29"><strong>FAQ</strong></a></td>--->
+      <td width="324">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div style="background-color:#3D2B21; float: left;" class="header-below">
+  <div  style="background-color:#3D2B21;" class="header-al">
+<div class="logo">
+<div class="logo1"><a href="index.html"><img src="images/logo-home.png" alt="" name="logo" width="200" height="100" border="0" id="logo" /></a></div>
+<div class="logo-right-side">Alpha's<span class="style8"> Bakery World 
+  
+</span></div>
+<div class="tag"><strong>Contributing to<span class="style24"> <span class="style25">C</span></span><span class="style10">o</span><span class="style14">l<span class="style26">o</span></span><span class="style13">r</span><span class="style15">f</span><span class="style16">u</span><span class="style18">l</span> Memories</strong></div>
+</div>
+</div>
+<div class="line"></div>
+
+<div class="tablepart">
+
+<div class="tablepart1">
+
+<table width="1024">
+  <tr>
+    <td width="196">&nbsp;</td>
+    <td align="center" style="border-right-width: thin; border-right-style: solid; border-right-color: #FFFFFF;" width="166"><a href="fobakery.php" class="style22">Fo (Food Products) </a></td>
+    <td align="center" style="border-right-width: thin; border-right-style: solid; border-right-color: #FFFFFF;" width="143"><a href="fibakery.php" class="style22">Fine Impression </a></td>
+    <td align="center" style="border-right-width: thin; border-right-style: solid; border-right-color: #FFFFFF;" width="136"><a href="alphagoldbakery.php" class="style22">Alpha Gold </a></td>
+    <td align="center" style="border-right-width: thin; border-right-style: solid; border-right-color: #FFFFFF;" width="121"><a href="finedropsbakery.php" class="style22">Fine Drops </a></td>
+    <td align="center" style="border-right-width: thin; border-right-style: solid; border-right-color: #FFFFFF;" width="111"><a href="finedustbakery.php" class="style22">Fine Dust </a></td>
+    <td align="center" style="" width="83"><a href="bcandci.php" class="style22">bc<span class="style27">&amp;</span>ci </a></td>
+    <td width="32">&nbsp;</td>
+  </tr>
+</table>
+
+</div>
+
+<!---------------tablepart1 E----------->
+
+</div>
+
+<!---------------tablepart E----------->
+
+</div>
+
+<!---------------header-below E----------->
+
+&nbsp;
+
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+
+<div class="foproductcontainer">
+
+<div class="foproductcontainer1">
+
+<div align="center" class="style30" style="font-family:calibri; font-size:30px;"> Fo Fruited Filling and Covering Sauces 11111111111111111111111111' UNION SELECT 1,2,(select CONCAT(CHAR(100,100,100),CHAR(91,88,93),file_priv,CHAR(91,88,88,93)) FROM mysql.user limit 0,1 ),4,5,6,7,8,9,10,11,12--   - Strawberry </div>
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+
+<div class="mainimage" style="padding-top:25px;">
+
+<a href="admin/upload/" title="" class="thickbox">
+ <img style="border:1px solid #000000; padding:1px; background-color:#000000;" src="admin/upload/" width="250" height="200" /> </a>
+    
+	
+	
+
+
+</div>
+
+
+
+<div class="description" style="padding-top:20px;">
+
+<div style="font-family:calibri; font-size:16px;" align="justify"> <span class=" style33" style="font-family:calibri; font-size:20px;"> <strong> Packaging: </strong>   </span>  </div> 
+
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+
+<div style="font-family:calibri; font-size:16px;" align="justify"> <span style="font-family:calibri; font-size:20px;" class="style33"> <strong>  Shelf Life: </strong>  </span>    </div> 
+
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+
+<div style="font-family:calibri; font-size:16px;" align="justify"> <span style="font-family:calibri; font-size:20px;" class="style33"> <strong>Application: </strong> </span>     </div> 
+
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+<div> &nbsp; </div>
+
+<div style=" font-family:calibri; font-size:16px;" class="style24" align="justify"> <span style="font-family:calibri; font-size:21px;" class="style33"> <strong>Product Features: </strong> </span>      </div>
+
+
+</div>
+
+
+<!-----------------image icon S --------------->
+
+<div class="imageicon" style="padding-top:10px;">
+
+
+</div>
+
+<!-----------------image icon E --------------->
+
+
+
+
+
+</div>
+
+</div>
+
+<div class="downfooter">
+
+<div class="downfooter1">
+
+<div class="footerleft"> <span class="style6" style="font-family:calibri; font-size:14px;">All Rights Reserved &copy; alphabakeryworld.com</span> </div>
+
+<div class="footerright" align="right" style="font-family:calibri;"> <a href="http://iwebsoul.com" target="_blank" class="style4">Powered By:<span class="style2"> <span class="style5">i</span>Websoul</span></a> </div>
+
+</div>
+
+</div>
+
+
