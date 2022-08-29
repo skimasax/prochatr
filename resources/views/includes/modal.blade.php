@@ -12,19 +12,32 @@
 				<img src="{{ asset('asset/img/subscribe.png') }}" alt="" class="img-fluid" style="width: 100px; height: 100px; border-radius: 100px;">
 				<br />
 				<br />
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_BLANK">
-				<input type="hidden" name="cmd" value="_s-xclick">
-				<input type="hidden" name="hosted_button_id" value="SH8EH74FN37GG">
+				@php
+					
+				@endphp
+				<form action="{{route('paysprintpayment')}}" method="get">
+					@csrf
+				{{-- <input type="hidden" name="cmd" value="_s-xclick"> --}}
+				{{-- <input type="hidden" name="hosted_button_id" value="SH8EH74FN37GG"> --}}
 				<table>
-				<tr><td class="text-center"><input type="hidden" name="on0" value="Upgrade NOW"></td></tr>
-				<tr><td><select name="os0" style="height: 40px; border-radius: 10px; margin: 10px;">
-					<option value="Monthly">Monthly : $5.00 CAD - monthly</option>
-					<option value="Annually">Annually : $50.00 CAD - monthly</option>
+				<tr><td class="text-center">
+					{{-- <input type="hidden" name="on0" value="Upgrade NOW"> --}}
+				</td></tr>
+				<tr><td><select name="os0" style="height: 40px; border-radius: 10px; margin: 10px;" id="os0">
+					@isset($data['subscription'])
+					@if (count($data['subscription']) > 0)
+					@foreach ( $data['subscription'] as $subscription)
+				
+					<option value="{{ $subscription->id }}">{{$subscription->type}}</option>
+					@endforeach
+					@endif
+					@endisset
 				</select> </td></tr>
 				</table>
 				<input type="hidden" name="currency_code" value="CAD">
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				<button type="submit" class="btn btn-warning">Subscribe</button>
+				 {{-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">  --}}
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
 				</form>
 			</div>
 		</div>
@@ -692,3 +705,12 @@ Wish to sync with your accounts?
 	<br />
 	<br />
 </div>
+
+<script>
+	function myNewFunction(sel) {
+  console.log({
+	  text: sel.options[sel.selectedIndex].text,
+	  value: $('#os0').val()
+  });
+}
+</script>

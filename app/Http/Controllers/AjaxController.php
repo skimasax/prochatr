@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 //Session
 use Session;
 //Mail
@@ -30,6 +31,7 @@ use App\Chat;
 use App\Chat_info;
 use App\Prochatrinvite;
 use App\Interest;
+use App\Transaction;
 use App\Badge;
 use \App\Companylogo as Companylogo;
 
@@ -535,12 +537,18 @@ class AjaxController extends Controller
     }
 
     public function Login(Request $req){
+      // dd(auth()->user());
+
       //Insert to Personal Details
       $checkData = Account::select('login_id', 'firstname', 'lastname', 'password', 'accounts.username', 'image')->join('personal_details', 'personal_details.user_id', '=', 'accounts.login_id')->where('accounts.username', $req->username)->orWhere('personal_details.user_id', $req->username)->limit(1)->get();
+
+
+
 
       if(count($checkData) > 0){
         //Check Password
         if (Hash::check($req->password, $checkData[0]->password)){
+
           //Set Session
           $req->session()->put(['prochatr_login_id' => $checkData[0]->login_id, 'prochatr_firstname' => $checkData[0]->firstname, 'prochatr_lastname' => $checkData[0]->lastname, 'prochatr_image' => $checkData[0]->image]);
           $resData = ['res' => 'Success', 'type' => 'Login'];
@@ -605,6 +613,8 @@ class AjaxController extends Controller
              'email' => 'required|email',
          ));
 
+        //  dd($validator);
+
       if ($validator->fails()) {
          $resData = ['res' => 'Address Error', 'type' => 'Subscribe'];
          return $this->returnJSON($resData);
@@ -612,6 +622,8 @@ class AjaxController extends Controller
 
       if($req->email && ($this->isEmail($req->email) == 1)){
         //Insert to Personal Details
+        // $amount=Transaction::where('id',Auth::id())->first();
+        // dd($amount);
         $insertData = Subscribe::firstOrCreate(
           ['email' => $req->email],
           ['login_id' => 1]

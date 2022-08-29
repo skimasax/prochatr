@@ -82,6 +82,8 @@ Route::group(['prefix' => 'Admin'], function() {
 	Route::get('getRegistered', ['uses' => 'AdminController@getRegistered', 'as' => 'main.admin.getRegistered']);
 	Route::get('details', ['uses' => 'AdminController@details', 'as' => 'main.admin.details']);
 	Route::get('unregistered', ['uses' => 'AdminController@unregistered', 'as' => 'main.admin.unregistered']);
+	Route::post('makepayment' ,['uses' => 'AdminController@makepayment', 'as' =>'makepayment']);
+	Route::get('paysprintpayment' ,['uses' => 'AdminController@paysprintPayment', 'as' =>'paysprintpayment']);
 });
 
 //Ajax
@@ -93,3 +95,11 @@ Route::group(['prefix' => 'Api'], function() {
 Route::group(['prefix' => 'Cron'], function() {
 	Route::get('checkActive', ['uses' => 'CronController@checkActive', 'as' => 'cron.checkActive']);
 });
+
+//pay with paysprint
+Route::prefix('paysprint')->group(function () {
+	Route::post('/user', ['uses' => 'PaySprintController@user', 'as' => 'paysprint.user']);
+	Route::post('/guest', ['uses' => 'PaySprintController@guest', 'as' => 'paysprint.guest']);
+});
+
+

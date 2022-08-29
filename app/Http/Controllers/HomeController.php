@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Prochatrinvite;
 use App\Connection;
 use App\Personal_detail;
+use App\Subscription;
 use App\interests;
 use App\Companylogo as Companylogo;
 
@@ -57,7 +58,19 @@ class HomeController extends Controller
     }
 
     public function userinterest(Request $req){
-        return view('pages.userinterest')->with('title', 'Prochatr - Setup Finish')->with('data', $this->getConn(3, 3));
+
+            // Get This user...
+
+            $thisuser = Personal_detail::where('user_id', session('prochatr_login_id'))->first();
+
+            $data=array(
+                'subscription' => Subscription::get(),
+                'userdetails' => $thisuser
+            );
+
+        //    dd($data['subscription']);
+
+        return view('pages.userinterest')->with('title', 'Prochatr - Setup Finish')->with('data', $this->getConn(3, 3))->with(['data' => $data]);
     }
 
     public function setup(Request $req){

@@ -12,4 +12,4 @@ use Socialite;
 public function redirectToProvider($driver)
 {
     return Socialite::driver($driver)->redirect();
-}
+};

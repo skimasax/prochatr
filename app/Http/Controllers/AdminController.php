@@ -15,6 +15,7 @@ use Carbon\Carbon;
 //Models
 use \App\Account;
 use \App\Connection;
+use \App\Subscription;
 use \App\Personal_detail;
 use \App\Companylogo as Companylogo;
 
@@ -61,6 +62,21 @@ class AdminController extends Controller
 
   public function returnJSON($data){
     return response()->json($data);
+  }
+
+  public function makePayment(Request $request)
+  {
+    $data = Subscription::where('id', $request->os0)->first();
+
+    return view('includes.paysprint_payment', compact('data'));
+  }
+  
+  public function paysprintPayment(Request $request)
+  {
+    $data = Subscription::where('id', $request->os0)->first();
+    // dd($data);
+
+    return view('includes.paysprint_payment', compact('data'));
   }
   //END
 }
